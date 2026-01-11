@@ -16,7 +16,7 @@ import { useState } from "react";
 
 export function TransactionList() {
   const [status, setStatus] = useState<"pending" | "confirmed">("confirmed");
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(5);
 
   const { data, isLoading, error } = useTransactionsByStatus(status, limit);
 
@@ -78,7 +78,7 @@ export function TransactionList() {
             No transactions found
           </p>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
             {transactions.map((tx) => (
               <div
                 key={tx._id}

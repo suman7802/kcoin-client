@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTransactionSummary } from "@/hooks/useWallet";
 import { formatCurrency } from "@/lib/utils/formatters";
 import { Loader2 } from "lucide-react";
