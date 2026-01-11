@@ -5,25 +5,25 @@ A modern, full-featured cryptocurrency wallet application built with Next.js, Re
 ## Features
 
 - 🔐 **Authentication System**
-  - User registration and login
-  - Secure session management
-  - Protected routes
+    - User registration and login
+    - Secure session management
+    - Protected routes
 
 - 💰 **Wallet Management**
-  - View wallet balance and address
-  - Send transactions to other addresses
-  - Track pending and confirmed transactions
-  - Transaction history with pagination
+    - View wallet balance and address
+    - Send transactions to other addresses
+    - Track pending and confirmed transactions
+    - Transaction history with pagination
 
 - ⛓️ **Blockchain Explorer**
-  - View the entire blockchain
-  - Explore block details and transactions
-  - Mine new blocks
+    - View the entire blockchain
+    - Explore block details and transactions
+    - Mine new blocks
 
 - 📊 **Dashboard**
-  - Wallet summary overview
-  - Recent transactions display
-  - Quick access to all features
+    - Wallet summary overview
+    - Recent transactions display
+    - Quick access to all features
 
 ## Tech Stack
 
@@ -49,17 +49,20 @@ A modern, full-featured cryptocurrency wallet application built with Next.js, Re
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd GloballyHubClient
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `.env.local` file in the root directory (optional):
+
 ```env
 NEXT_PUBLIC_API_BASE_URL=http://localhost:8080/api/v0
 ```
@@ -166,8 +169,8 @@ The API client uses cookie-based authentication with credentials included in all
 
 ## Environment Variables
 
-| Variable | Description | Default |
-|----------|-------------|---------|
+| Variable                   | Description          | Default                        |
+| -------------------------- | -------------------- | ------------------------------ |
 | `NEXT_PUBLIC_API_BASE_URL` | Backend API base URL | `http://localhost:8080/api/v0` |
 
 ## Contributing
