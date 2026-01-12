@@ -87,7 +87,6 @@ export function useCreateTransaction() {
         mutationFn: (data: CreateTransactionRequest) => createTransaction(data),
         onSuccess: (data) => {
             toast.success(data.message || 'Transaction created successfully!');
-            // Invalidate related queries
             queryClient.invalidateQueries({ queryKey: ['wallet'] });
             queryClient.invalidateQueries({ queryKey: ['pending-balance'] });
             queryClient.invalidateQueries({ queryKey: ['transaction-summary'] });

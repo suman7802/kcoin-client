@@ -14,7 +14,6 @@ export function useMineBlock() {
         mutationFn: () => mineBlock(),
         onSuccess: (data) => {
             toast.success(data.message || 'Block mined successfully!');
-            // Invalidate blockchain queries
             queryClient.invalidateQueries({ queryKey: ['blockchain'] });
             queryClient.invalidateQueries({ queryKey: ['transactions'] });
             queryClient.invalidateQueries({ queryKey: ['transaction-history'] });

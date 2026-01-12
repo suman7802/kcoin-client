@@ -49,7 +49,6 @@ export function useAuth(options?: UseAuthOptions) {
         mutationFn: () => logout(),
         onSuccess: () => {
             toast.success('Logged out successfully');
-            // Call callback first, then clear cache
             options?.onLogoutSuccess?.();
             queryClient.clear();
             router.push('/login');
